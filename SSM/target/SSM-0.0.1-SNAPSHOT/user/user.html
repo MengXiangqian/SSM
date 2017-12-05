@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="jquery,ui,easy,easyui,web">
+<meta name="description"
+	content="easyui help you build your web page easily!">
+<link rel="stylesheet" type="text/css"
+	href="../easyui/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="../easyui/themes/icon.css">
+<link rel="stylesheet" type="text/css" href="../easyui/demo/demo.css">
+<script type="text/javascript" src="../easyui/jquery.min.js"></script>
+<script type="text/javascript"
+	src="../easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="js/user.js"></script>
+<script type="text/javascript" src="../common_js/util.js"></script>
+</head>
+<body>
+	<table id="queryTable" title="用户列表" class="easyui-datagrid">
+	</table>
+
+	<div id="tb">
+		<a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true"
+			id="add">增加</a> <a href="#" class="easyui-linkbutton"
+			iconCls="icon-cut" plain="true" id="delete">删除</a> <a href="#"
+			class="easyui-linkbutton" iconCls="icon-edit" plain="true"
+			id="update">修改</a> 
+			
+			<a href="#" class="easyui-linkbutton"
+			iconCls="icon-search" plain="true" id="query">搜索</a>
+	</div>
+
+
+	<div id="registerDialog" class="easyui-dialog"
+		style="width: 400px; height: 280px; padding: 10px 20px" closed="true"
+		buttons="#dlg-buttons">
+		<div class="ftitle">用户信息录入</div>
+		<form id="userForm" method="post">
+		<div class="fitem">
+		
+				<input name="id" class="easyui-validatebox"
+					type="hidden">
+			</div>
+			<div class="fitem">
+				<label>姓名:</label> <input name="name" class="easyui-validatebox"
+					required="true">
+			</div>
+			<div class="fitem">
+				<label>年龄:</label> <input name="age" class="easyui-validatebox"
+					required="true">
+			</div>
+			<!-- <div class="fitem">
+				<label>生日:</label> <input name="birthday" class="easyui-datebox" 
+					required="required" data-options="formatter:formatDate,parser:dateParser">
+			</div>  -->
+			<div class="fitem">
+				<label>地址:</label> <input name="address">
+			</div>
+			<!--  <div class="fitem">
+				<label>国家:</label> <select class="easyui-combobox" name="country">
+					<option value="japan">日本</option>
+					<option value="usa">美国</option>
+					<option value="china">中国</option>
+				</select>
+			</div>  -->
+			<div class="fitem">
+				<label>性别:</label> <input type = "radio" name="gender" value = "男">男
+				<input type = "radio" name="gender" value = "女">女
+			</div>
+			<!-- <div class="fitem">
+				<label>爱好:</label> 
+				<input type = "checkbox" name="loves" value = "d">足球
+				<input type = "checkbox" name="loves" value = "a">篮球
+				<input type = "checkbox" name="loves" value = "b">乒乓球
+				<input type = "checkbox" name="loves" value = "c">地球
+			</div> -->
+		</form>
+	</div>
+	<div id="dlg-buttons">
+		<a href="#" class="easyui-linkbutton" iconCls="icon-ok" id="save">保存</a>
+		<a href="#" class="easyui-linkbutton" iconCls="icon-cancel"
+			id="cancel">退出</a>
+	</div>
+
+
+
+</body>
+</html>

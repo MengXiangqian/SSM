@@ -1,0 +1,10 @@
+com\mm\web\UpdateUser.class
+com\mm\util\UUid.class
+com\mm\web\DeleteUser.class
+com\mm\entity\User.class
+com\mm\serviceImpl\UserServiceImpl.class
+com\mm\web\AddUser.class
+com\mm\service\UserService.class
+com\mm\dao\UserDao.class
+com\mm\web\QueryUserById.class
+com\mm\web\QueryUserByName.class
