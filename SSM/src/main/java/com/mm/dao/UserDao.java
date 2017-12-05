@@ -5,7 +5,7 @@ import java.util.List;
 import com.mm.entity.User;
 
 public interface UserDao {
-	User getUser(String id);
+	User getUser(String id);//
 	List<User> getAllUsers();
 	int addUser(User user);
 	int updateUser(User user);
